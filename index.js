@@ -11,10 +11,10 @@ var bcrypt = require('bcrypt');
 const saltRounds = 10;
 var User = require('./models/User.js');
 var jwt = require('jsonwebtoken');
-var secretKey = 'verySecretKey';
+var secretKey = 'superSecret';
 var apiPrefix = '/api/v1';
 mongoose.Promise = require('bluebird');
-mongoose.connect('mongodb://kittyfundAdmin:$$qwe123QWE##@localhost:27017/kittyfund', {
+mongoose.connect('mongodb://kittyfund', {
 	useMongoClient: true,
 });
 var db = mongoose.connection;
